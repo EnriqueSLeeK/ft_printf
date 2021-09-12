@@ -6,7 +6,7 @@
 /*   By: ensebast <ensebast@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 14:23:17 by ensebast          #+#    #+#             */
-/*   Updated: 2021/08/06 19:20:09 by ensebast         ###   ########.br       */
+/*   Updated: 2021/09/11 15:25:36 by ensebast         ###   ########.br       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,8 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	res = 0;
 	i = 0;
+	if (str[0] == 0)
+		return (0);
 	while (str[i])
 	{
 		if (ft_treat_branch(str, &res, &sign, &i))

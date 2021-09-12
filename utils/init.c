@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   octo_flag.c                                        :+:      :+:    :+:   */
+/*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ensebast <ensebast@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/03 11:24:40 by ensebast          #+#    #+#             */
-/*   Updated: 2021/09/09 16:35:26 by ensebast         ###   ########.br       */
+/*   Created: 2021/09/09 19:20:45 by ensebast          #+#    #+#             */
+/*   Updated: 2021/09/09 19:28:58 by ensebast         ###   ########.br       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	octo_flag(char format, int flag, int *i)
+t_attr_f	*init(t_attr_f *node)
 {
-	if (flag)
-	{
-		if (format == 'x')
-		{
-			write(1, "0x", 2);
-			*i += 2;
-		}
-		else if (format == 'X')
-		{
-			write(1, "0X", 2);
-			*i += 2;
-		}
-	}
+	node -> format_flag = 0;
+	node -> width_size = 0;
+	node -> minus_flag = 0;
+	node -> plus_flag = 0;
+	node -> zero_quant = 0;
+	node -> dot_flag = -1;
+	node -> octo_flag = 0;
+	node -> space_flag = 0;
+	node -> next = 0;
+	return (node);
+}
+
+void	init_counter(int *count, int *index)
+{
+	*count = 0;
+	*index = 0;
 }

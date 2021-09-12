@@ -6,17 +6,20 @@
 /*   By: ensebast <ensebast@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/03 11:23:43 by ensebast          #+#    #+#             */
-/*   Updated: 2021/09/03 11:23:55 by ensebast         ###   ########.br       */
+/*   Updated: 2021/09/10 00:34:53 by ensebast         ###   ########.br       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	dot_flag(int precision, int *i)
+void	dot_flag(int precision)
 {
-	while (precision > *i)
+	int	k;
+
+	k = 0;
+	while (precision > k)
 	{
 		write(1, "0", 1);
-		*i += 1;
+		k += 1;
 	}
 }

@@ -7,7 +7,7 @@ Implementation:
 
 Mandatory part:
 
-## The following are flags implemented:
+### The following are flags implemented:
 - %d print a number in decimal number format
 - %i print a number in decimal number format
 - %u print a unsigned number in decimal format
@@ -18,9 +18,9 @@ Mandatory part:
 - %X print a number in hexadecimal format (Uppercase)
 - %% print the percent
 
-Bonus part:
+## Bonus part:
 
-## Bonus flag implementation:
+### Bonus flag implementation:
 - width        specify the width of the formatted output
 - \#            put a 0x(for %x and %p) or 0X(for %X) in front of hexadecimal number
 - 0<quant>     the formatted string (for %d, %i, %u, %x, %X, %p) is padded with zero's specified by the "quant"

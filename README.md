@@ -3,9 +3,7 @@
 Introduction:
 The project was proposed by the 42 school, consist in a partial reimplementation of the function printtf present in the standart libC, used to print a formatted string to the terminal using flags
 
-Implementation:
-
-Mandatory part:
+## Mandatory part:
 
 ### The following are flags implemented:
 - %d print a number in decimal number format

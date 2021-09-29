@@ -9,6 +9,7 @@ Mandatory part:
 
 ### The following are flags implemented:
 - %d print a number in decimal number format
+
 - %i print a number in decimal number format
 - %u print a unsigned number in decimal format
 - %p print a address in hexadecimal format
